@@ -1,2 +1,2 @@
-# practice-html-css
- For practice purpose of html and css
+#my-portfolio
+A website to show my work and projects I made
