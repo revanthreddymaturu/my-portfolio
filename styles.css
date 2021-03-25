@@ -109,16 +109,24 @@ hr{
 .section
 {
     padding:2rem;
+  
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
 
 }
 .section h1
 {
     text-align: center;
+
 }
 .ow
 {
     background-color:var(--ow-gray);
 }
+
 
 /** Footers**/
 .footer
@@ -134,5 +142,7 @@ hr{
 .footer .link{
     color:white;
 }
-
+.footer ul{
+    padding-inline-start: 0px;
+}
 
