@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link href="styles.css" rel="stylesheet"\>
 </head>
+
 <body>
     <h1>Revanth's Component Library!</h1>
     <p>I am making a library to use them in all my future projects.</p>
@@ -14,30 +17,31 @@
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest heading</h2>
     <p>This is a normal text</p>
+    <p>This line will have a <strong>bold</strong> text</p>
     <small>This is a relatively smaller text</small>
     <hr>
     <h2>@Containers</h2>
     <h3>@fluid container</h3>
-    <div>This is a fluid container.It will go to full width of page with some margin</div>
+    <div class="container">This is a fluid container.It will go to full width of page with some margin</div>
     <h3>@center container</h3>
-    <div>This is a center container and this will be around a specified width</div>
+    <div class="container container-center">This is a center container and this will be around a specified width</div>
     <hr>
     <h2>@links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link primary-link" href="/">Primary Link</a>
+    <a class="link secondary-link" href="/">Secondary Link</a>
     <hr>
     <h2>@lists</h2>
-    <h3>unordered list</h3>
-    <ul>
+    <h3 >unordered list</h3>
+    <ul class="lists-non-bullets">
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ul>
     <h3>unordered inline list</h3>
-    <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
+    <ul class="lists-non-bullets">
+        <li class="list-inline">Item one</li>
+        <li class="list-inline">Item two</li>
+        <li class="list-inline">Item three</li>
     </ul>
     <h3>ordered list</h3>
     <ol>
@@ -46,53 +50,74 @@
         <li>Item three</li>
     </ol>
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>Item one</li>
         <li>Item two</li>
         <li>Item three</li>
     </ol>
     <hr>
     <h2>@nav</h2>
-    <nav>
-        <div>IamThis</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand" >IamThis</div>
+        <ul class="lists-non-bullets-nav-pills">
+            <li class="list-inline" >
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">products</a>
+            <li class="list-inline">
+                <a class="link " href="/">products</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-inline">
+                <a class="link " href="/">about</a>
             </li>
         </ul>
     </nav>
-<hr>
-<h2>@header</h2>
-<header>
-    <img src="images/undraw_Goals_re_lu76.svg">
-    <h1>Heading inside a header/hero</h1>
-</header>
-<hr>
-<h2>@section</h2>
-<section>
-    <h3>White section</h3>
-    <p>This will have white background</p>
-</section>
-<section>
-    <h3>Off White section</h3>
-    <p>This will have off white background</p>
-</section>
-<hr>
-<h2>@footer</h2>
-<footer>
-    <div>header inside footer</div>
-    <ul>
-        <li>socialone</li>
-        <li>socialtwo</li>
-        <li>socialthree</li>
-    </ul>
-</footer>
-<!-- <div style="height:30vh;"></div> -->
+    <hr>
+    <h2>@header</h2>
+    <header class="hero">
+        <img class="hero-img" src="images/image.svg">
+        <h1 class="hero-heading">Revanth the 
+            <span class="specialist">developer</span>
+        </h1>
+    </header>
+    <hr>
+
+
+
+    <h2>@section</h2>
+    <section class="section">
+        <div class="container-center">
+            <h1>White section</h1>
+            <p>This will have white background</p>
+        </section>
+    
+        </div>
+
+    <section class="section ow">
+        <div class="container-center"><h1 class="ow">Off White section</h1>
+            <p>This will have off white background</p></div>
+        
+    </section>
+    <hr>
+
+
+
+    <h2>@footer</h2>
+    <footer class="footer">
+        <div>header inside footer</div>
+        <ul class="social-links lists-non-bullets">
+            <li class="list-inline">
+                <a class="link" href="/">socialone</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialtwo</a>
+            </li>
+            <li class="list-inline">
+                <a class="link" href="/">socialthree</a>
+            </li>
+
+        </ul>
+    </footer>
+    <!-- <div style="height:30vh;"></div> -->
 </body>
+
 </html>
