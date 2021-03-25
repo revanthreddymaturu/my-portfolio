@@ -1,2 +1,3 @@
 # practice-html-css
- For practice purpose of html and css
+
+Website to showcase my projects and technical skills
